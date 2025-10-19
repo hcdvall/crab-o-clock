@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crab-O-Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Comic Sans', monospace;
+            overflow: hidden;
+        }
+        
+        .countdown-container {
+            text-align: center;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+        
+        .countdown {
+            font-size: 8vw;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        .labels {
+            font-size: 2vw;
+            margin-top: 20px;
+            letter-spacing: 0.3em;
+            opacity: 0.8;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .countdown {
+                font-size: 12vw;
+            }
+            .labels {
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body></body>
+</html>

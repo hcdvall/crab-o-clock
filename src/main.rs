@@ -4,7 +4,7 @@ use chrono::{DateTime, Utc, TimeZone};
 
 #[component]
 fn App() -> impl IntoView {
-    let target = Utc.with_ymd_and_hms(2025, 10, 31, 15, 0, 0).unwrap();
+    let target = Utc.with_ymd_and_hms(2025, 10, 31, 13, 0, 0).unwrap();
     
     let (countdown, set_countdown) = signal(calculate_countdown(target));
     
@@ -26,9 +26,6 @@ fn App() -> impl IntoView {
                     countdown.get().seconds
                 )}
             </div>
-            // <div class="labels">
-            //     "DAYS : HOURS : MINUTES : SECONDS"
-            // </div>
         </div>
     }
 }

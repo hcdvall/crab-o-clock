@@ -1,2 +1,7 @@
 [build]
 public_url = "/crab-o-clock/"
+
+[[assets]]
+source = "public"
+target = ""
+

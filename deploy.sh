@@ -2,6 +2,10 @@
 echo "Building..."
 trunk build --release
 
+echo "Copying fonts..."
+mkdir -p dist/fonts
+cp public/fonts/GlitchGoblin-2O87v.ttf dist/fonts/
+
 echo "Deploying..."
 cd dist
 git init

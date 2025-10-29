@@ -92,27 +92,6 @@
             white-space: nowrap;
         }
         
-        .countdown-container::after {
-            content: '<<< BUTTBUDDY >>>';
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #000000;
-            color: #ff0000;
-            padding: 12px 25px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 3px;
-            border: 2px solid #ff0000;
-            border-radius: 5px;
-            text-shadow: 0 0 5px #ff0000;
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
-            animation: system-blink-flash 10s infinite, text-rotate 60s infinite linear;
-            z-index: 1000;
-            white-space: nowrap;
-        }
-        
         .countdown {
             font-size: 8vw;
             font-weight: bold;
@@ -174,24 +153,6 @@
             51%, 100% { opacity: 0; }
         }
         
-        @keyframes system-blink-flash {
-            0% { opacity: 0; }
-            1% { opacity: 1; }
-            5% { opacity: 1; }
-            6% { opacity: 0; }
-            100% { opacity: 0; }
-        }
-        
-        @keyframes text-rotate {
-            0%, 15% { content: '<<< BUTTBUDDY >>>'; }
-            16%, 31% { content: '<<< DADBODY >>>'; }
-            32%, 47% { content: '<<< FRAGFANNY >>>'; }
-            48%, 63% { content: '<<< FLASHDADDY >>>'; }
-            64%, 79% { content: '<<< SPRAYPRAYER >>>'; }
-            80%, 95% { content: '<<< NOOBSLAYER >>>'; }
-            96%, 100% { content: ''; }
-        }
-        
         @keyframes data-stream {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
@@ -217,27 +178,10 @@
                 width: 90vw;
                 max-width: 400px;
             }
-            .countdown-container::after {
-                font-size: 1.1rem;
-                padding: 8px 15px;
-                letter-spacing: 2px;
-                bottom: -25px;
-                z-index: 1000;
-                white-space: nowrap;
-                width: 90vw;
-                max-width: 400px;
-            }
         }
         
         @media (max-width: 480px) {
             .countdown-container::before {
-                font-size: 0.9rem;
-                padding: 6px 12px;
-                letter-spacing: 1.5px;
-                width: 95vw;
-                max-width: 350px;
-            }
-            .countdown-container::after {
                 font-size: 0.9rem;
                 padding: 6px 12px;
                 letter-spacing: 1.5px;
